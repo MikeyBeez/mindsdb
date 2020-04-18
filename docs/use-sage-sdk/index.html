@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Train and host MindsDB Models using SageMaker SDK · Mindsdb</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;The following section explaines how to train and host models using &lt;a href=&quot;https://sagemaker.readthedocs.io/en/stable/&quot;&gt;Amazon SageMaker SDK&lt;/a&gt;.&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Train and host MindsDB Models using SageMaker SDK · Mindsdb"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mindsdb.github.io/mindsdb/index.html"/><meta property="og:description" content="&lt;p&gt;The following section explaines how to train and host models using &lt;a href=&quot;https://sagemaker.readthedocs.io/en/stable/&quot;&gt;Amazon SageMaker SDK&lt;/a&gt;.&lt;/p&gt;
+"/><meta property="og:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><link rel="shortcut icon" href="/mindsdb/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/mindsdb/css/main.css"/><script src="/mindsdb/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/mindsdb/"><img class="logo" src="/mindsdb/img/mindsdb_logo_white.png" alt="Mindsdb"/><h2 class="headerTitleWithLogo">Mindsdb</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/mindsdb/docs/installing-mindsdb" target="_self">Docs</a></li><li class=""><a href="https://github.com/mindsdb/mindsdb/releases" target="_self">Download</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Integrations</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/installing-mindsdb">Installing MindsDB</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/google-colab">Google Colab</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/jupyter-notebook">Running on Jupyter Notebook</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Tutorials</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/basic-mindsdb">Learning from Examples</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/advanced-mindsdb">Examples of Advanced Usecases</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Configuration</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/predictor-interface">Predictor interface</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/config">Configuration Settings</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Features</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/column-metrics">Column metrics</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/data-sources">Data sources</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Comparisons</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/comparison-mindsdb">Comparison with other Libraries</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/accuracy-comparison">Comparing Mindsdb accuracy</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Integrations</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/aws-sageMaker">Amazon SageMaker</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Bring your own container</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/mindsdb-container">MindsDB container</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/use-mindsdb-in-sage">Train and host MindsDB models</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/mindsdb/docs/use-sage-sdk">Train and host MindsDB Models using SageMaker SDK</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/call-sage-endpoint">Call SageMaker Endpoint</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Use Cases</h3><ul class=""><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Retail &amp; Online</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/customer-lifetime">Customer Lifetime Value Optimization</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/fraud-detection">Fraud Detection</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Financial Services</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/credit-scoring">Credit Scoring</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Health Care</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/patient-health">Patient Hearth Health</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/medical-diagnosis">Medical Diagnosis</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Travel</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/booking-cancelation">Hotel Booking Demand</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Telecommunications</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/churn-reduction">Customer Churn Reduction</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Contributing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/faq">FAQ</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/inside-mindsdb">Inside MindsdDB</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Train and host MindsDB Models using SageMaker SDK</h1></header><article><div><span><p>The following section explaines how to train and host models using <a href="https://sagemaker.readthedocs.io/en/stable/">Amazon SageMaker SDK</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="add-dependencies"></a><a href="#add-dependencies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add dependencies</h3>
+<p>Install SageMaker SDK :</p>
+<pre><code class="hljs">pip <span class="hljs-keyword">install</span> sagemaker
+</code></pre>
+<p>First, add IAM Role that have AmazonSageMakerFullAccess Policy.</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">import</span> sagemaker <span class="hljs-keyword">as</span> sage
+role = <span class="hljs-string">"arn:aws:iam::123213143532:role/service-role/AmazonSageMaker-ExecutionRole-20199"</span>
+sess = sage.Session()
+account = sess.boto_session.client(<span class="hljs-string">'sts'</span>).get_caller_identity()[<span class="hljs-string">'Account'</span>]
+</code></pre>
+<p>Next, provide s3 bucket where the models will be saved, get aws region from session and add URI to MindsDB image in AWS ECR:</p>
+<pre><code class="hljs css language-python">bucket_path = <span class="hljs-string">"s3://mdb-sagemaker/models/"</span>
+region = sess.boto_session.region_name
+image = <span class="hljs-string">'{}.dkr.ecr.{}.amazonaws.com/mindsdb_lts:latest'</span>.format(account, region)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="start-training"></a><a href="#start-training" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Start training</h3>
+<p>The required properties for invoking SageMaker training using Estimator are:</p>
+<ul>
+<li>The image name(str). The MindsDB container URI on ECR</li>
+<li>The role(str). AWS arn with SageMaker execution role</li>
+<li>The instance count(int). The number of machines to use for training.</li>
+<li>The instance type(str). The type of machine to use for training.</li>
+<li>The output path(str). Path to the s3 bucket where the model artifact will be saved.</li>
+<li>The session(sagemaker.session.Session). The SageMaker session object that we’ve defined in the code above.</li>
+<li>The base job name(str). The name of the training job</li>
+<li>The hyperparameters(dict). The MindsDB container requires to_predict value so it knows which column to predict.</li>
+</ul>
+<pre><code class="hljs css language-python">mindsdb_impl = sage.estimator.Estimator(image,
+                       role, <span class="hljs-number">1</span>, <span class="hljs-string">'ml.m4.xlarge'</span>,
+                       output_path=bucket_path,
+                       sagemaker_session=sess,
+                       base_job_name=<span class="hljs-string">"mindsdb-lts-sdk"</span>,
+                       hyperparameters={<span class="hljs-string">"to_predict"</span>: <span class="hljs-string">"Class"</span>})
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="deploy-the-model"></a><a href="#deploy-the-model" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deploy the model</h3>
+<p>The required configuration for deploying model:</p>
+<ul>
+<li>initial_instance_count (int) – The initial number of instances to run in the Endpoint created from this Model.</li>
+<li>instance_type (str) – The EC2 instance type to deploy this Model to. For example, ‘ml.p2.xlarge’, or ‘local’ for local mode.</li>
+<li>endpoint_name (str) - The name of the endpoint on SageMaker.</li>
+</ul>
+<pre><code class="hljs css language-python">dataset_location = <span class="hljs-string">'s3://mdb-sagemaker/diabetes.csv'</span>
+mindsdb_impl.fit(dataset_location)
+predictor = mindsdb_impl.deploy(<span class="hljs-number">1</span>, <span class="hljs-string">'ml.m4.xlarge'</span>, endpoint_name=<span class="hljs-string">'mindsdb-impl'</span>)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="make-a-prediction"></a><a href="#make-a-prediction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Make a prediction</h3>
+<p>Load the test dataset and then call the Predictor predict method with test data.</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">with</span> open(<span class="hljs-string">'test_data/diabetes-test.csv'</span>, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> reader:
+        when_data = reader.read()
+print(predictor.predict(when_data).decode(<span class="hljs-string">'utf-8'</span>))
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="delete-the-endpoint"></a><a href="#delete-the-endpoint" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete the endpoint</h3>
+<p>Don't forget to delete the endpoint after using it.</p>
+<pre><code class="hljs css language-python">sess.delete_endpoint(<span class="hljs-string">'mindsdb-impl'</span>)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="full-code-example"></a><a href="#full-code-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Full code example</h3>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">import</span> sagemaker <span class="hljs-keyword">as</span> sage
+
+<span class="hljs-comment"># Add AmazonSageMaker Execution role here</span>
+role = <span class="hljs-string">"arn:aws:iam:"</span>
+
+sess = sage.Session()
+account = sess.boto_session.client(<span class="hljs-string">'sts'</span>).get_caller_identity()[<span class="hljs-string">'Account'</span>]
+bucket_path = <span class="hljs-string">"s3://mdb-sagemaker/models/"</span>
+region = sess.boto_session.region_name
+image = <span class="hljs-string">'{}.dkr.ecr.{}.amazonaws.com/mindsdb_lts:latest'</span>.format(account, region)
+
+<span class="hljs-comment">#Hyperparameters to_predict is required for MindsDB container</span>
+mindsdb_impl = sage.estimator.Estimator(image,
+                       role, <span class="hljs-number">1</span>, <span class="hljs-string">'ml.m4.xlarge'</span>,
+                       output_path=bucket_path,
+                       sagemaker_session=sess,
+                       base_job_name=<span class="hljs-string">"mindsdb-lts-sdk"</span>,
+                       hyperparameters={<span class="hljs-string">"to_predict"</span>: <span class="hljs-string">"Class"</span>})
+
+dataset_location = <span class="hljs-string">'s3://mdb-sagemaker/diabetes.csv'</span>
+mindsdb_impl.fit(dataset_location)
+predictor = mindsdb_impl.deploy(<span class="hljs-number">1</span>, <span class="hljs-string">'ml.m4.xlarge'</span>, endpoint_name=<span class="hljs-string">'mindsdb-impl'</span>)
+<span class="hljs-keyword">with</span> open(<span class="hljs-string">'test_data/diabetes-test.csv'</span>, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> reader:
+        when_data = reader.read()
+print(predictor.predict(when_data).decode(<span class="hljs-string">'utf-8'</span>))
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/mindsdb/docs/use-mindsdb-in-sage"><span class="arrow-prev">← </span><span class="function-name-prevnext">Train and host MindsDB models</span></a><a class="docs-next button" href="/mindsdb/docs/call-sage-endpoint"><span class="function-name-prevnext">Call SageMaker Endpoint</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer mindsdb-primary" id="footer"><section class="sitemap"><a href="/mindsdb/" class="nav-home"><img src="/mindsdb/img/logo_bear.png" alt="Mindsdb" width="66" class="mindsdb-secondary" height="58"/></a><div><h5>Docs</h5><a href="/mindsdb/docs/installing-mindsdb">Getting started</a></div><div><h5>Community</h5><a href="https://medium.com/mindsdb" target="_blank" rel="noreferrer noopener">Medium</a><a href="https://www.facebook.com/MindsDB/" target="_blank">Facebook</a><a href="https://twitter.com/mindsdb?lang=en" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.youtube.com/channel/UC5_wBOLCWath6q1iTgPPD5A" target="_blank">Youtube</a></div><div><h5>More</h5><a href="https://www.mindsdb.com/blog" target="_blank">Blog</a><a href="https://github.com/mindsdb/mindsdb" target="_blank">GitHub</a><a class="github-button" href="https://github.com/mindsdb/mindsdb" data-icon="octicon-star" data-count-href="/mindsdb/mindsdb/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 <a href="http://mindsdb.com/">Mindsdb</a></section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

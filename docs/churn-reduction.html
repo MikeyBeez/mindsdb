@@ -1,0 +1,4801 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Customer Churn Reduction · Mindsdb</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;| Industry       | Department | Role               |&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Customer Churn Reduction · Mindsdb"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mindsdb.github.io/mindsdb/index.html"/><meta property="og:description" content="&lt;p&gt;| Industry       | Department | Role               |&lt;/p&gt;
+"/><meta property="og:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><link rel="shortcut icon" href="/mindsdb/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/mindsdb/css/main.css"/><script src="/mindsdb/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/mindsdb/"><img class="logo" src="/mindsdb/img/mindsdb_logo_white.png" alt="Mindsdb"/><h2 class="headerTitleWithLogo">Mindsdb</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/mindsdb/docs/installing-mindsdb" target="_self">Docs</a></li><li class=""><a href="https://github.com/mindsdb/mindsdb/releases" target="_self">Download</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Use Cases</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/installing-mindsdb">Installing MindsDB</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/google-colab">Google Colab</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/jupyter-notebook">Running on Jupyter Notebook</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Tutorials</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/basic-mindsdb">Learning from Examples</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/advanced-mindsdb">Examples of Advanced Usecases</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Configuration</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/predictor-interface">Predictor interface</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/config">Configuration Settings</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Features</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/column-metrics">Column metrics</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/data-sources">Data sources</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Comparisons</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/comparison-mindsdb">Comparison with other Libraries</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/accuracy-comparison">Comparing Mindsdb accuracy</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Integrations</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/aws-sageMaker">Amazon SageMaker</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Bring your own container</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/mindsdb-container">MindsDB container</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/use-mindsdb-in-sage">Train and host MindsDB models</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/use-sage-sdk">Train and host MindsDB Models using SageMaker SDK</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/call-sage-endpoint">Call SageMaker Endpoint</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Use Cases</h3><ul class=""><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Retail &amp; Online</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/customer-lifetime">Customer Lifetime Value Optimization</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/fraud-detection">Fraud Detection</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Financial Services</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/credit-scoring">Credit Scoring</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Health Care</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/patient-health">Patient Hearth Health</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/medical-diagnosis">Medical Diagnosis</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Travel</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/booking-cancelation">Hotel Booking Demand</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Telecommunications</h4><ul><li class="navListItem navListItemActive"><a class="navItem" href="/mindsdb/docs/churn-reduction">Customer Churn Reduction</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Contributing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/faq">FAQ</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/inside-mindsdb">Inside MindsdDB</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Customer Churn Reduction</h1></header><article><div><span><table>
+<thead>
+<tr><th>Industry</th><th>Department</th><th>Role</th></tr>
+</thead>
+<tbody>
+<tr><td>Telecomunications</td><td>Marketing</td><td>Marketing Lead</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="processed-dataset"></a><a href="#processed-dataset" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Processed Dataset</h2>
+<h6><a class="anchor" aria-hidden="true" id="data-https-imgshieldsio-badge-get-data-telecomcustomerchurn-green-https-githubcom-mindsdb-mindsdb-examples-tree-master-benchmarks-customer-churn-dataset"></a><a href="#data-https-imgshieldsio-badge-get-data-telecomcustomerchurn-green-https-githubcom-mindsdb-mindsdb-examples-tree-master-benchmarks-customer-churn-dataset" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/mindsdb/mindsdb-examples/tree/master/benchmarks/customer_churn/dataset"><img src="https://img.shields.io/badge/GET--DATA-TelecomCustomerChurn-green" alt="Data"></a></h6>
+<p>Customer churn or customer turnover is the loss of clients or customers. Telecommunication companies often use customer attrition analysis and customer attrition rates as one of their key business metrics because the cost of retaining an existing customer is far less than acquiring a new one.  Use churn prediction models that predict customer churn by assessing their propensity of risk to churn.</p>
+<p><details>
+<summary>Click to expand Features Informations:</summary></p>
+<ol>
+<li>customerIDCustomer ID</li>
+<li>genderWhether the customer is a male or a female</li>
+<li>SeniorCitizenWhether the customer is a senior citizen or not (1, 0)</li>
+<li>PartnerWhether the customer has a partner or not (Yes, No)</li>
+<li>DependentsWhether the customer has dependents or not (Yes, No)
+tenureNumber of months the customer has stayed with the company</li>
+<li>PhoneServiceWhether the customer has a phone service or not (Yes, No)</li>
+<li>MultipleLinesWhether the customer has multiple lines or not (Yes, No, No phone service)</li>
+<li>InternetServiceCustomer’s internet service provider (DSL, Fiber optic, No)</li>
+<li>OnlineSecurityWhether the customer has online security or not (Yes, No, No internet service)</li>
+<li>OnlineBackupWhether the customer has online backup or not (Yes, No, No internet service)</li>
+<li>DeviceProtectionWhether the customer has device protection or not (Yes, No, No internet service)</li>
+<li>TechSupportWhether the customer has tech support or not (Yes, No, No internet service)</li>
+<li>StreamingTVWhether the customer has streaming TV or not (Yes, No, No internet service)</li>
+<li>StreamingMoviesWhether the customer has streaming movies or not (Yes, No, No internet service)</li>
+<li>ContractThe contract term of the customer (Month-to-month, One year, Two year)</li>
+<li>PaperlessBillingWhether the customer has paperless billing or not (Yes, No)</li>
+<li>PaymentMethodThe customer’s payment method (Electronic check, Mailed check, Bank transfer (automatic), Credit card (automatic))</li>
+<li>MonthlyChargesThe amount charged to the customer monthly</li>
+<li>TotalChargesThe total amount charged to the customer
+20 ChurnWhether the customer churned or not (Yes or No)
+</details></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="mindsdb-code-example"></a><a href="#mindsdb-code-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MindsDB Code example</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">import</span> mindsdb
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+<span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> balanced_accuracy_score
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">()</span>:</span>
+    backend = <span class="hljs-string">'lightwood'</span>
+
+    mdb = mindsdb.Predictor(name=<span class="hljs-string">'employee_retention_model'</span>)
+
+    mdb.learn(from_data=<span class="hljs-string">'dataset/train.csv'</span>, to_predict=<span class="hljs-string">'Churn'</span>, backend=backend,
+              output_categories_importance_dictionary={<span class="hljs-string">'Yes'</span>: <span class="hljs-number">1</span>, <span class="hljs-string">'No'</span>: <span class="hljs-number">0.5</span>},
+              disable_optional_analysis=<span class="hljs-literal">True</span>)
+
+    test_df = pd.read_csv(<span class="hljs-string">'dataset/test.csv'</span>)
+    predictions = mdb.predict(when_data=<span class="hljs-string">'dataset/test.csv'</span>,
+                              unstable_parameters_dict={<span class="hljs-string">'always_use_model_predictions'</span>: <span class="hljs-literal">True</span>})
+
+    results = [str(x[<span class="hljs-string">'Churn'</span>]) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> predictions]
+    real = list(map(str, list(test_df[<span class="hljs-string">'Churn'</span>])))
+
+    accuracy = balanced_accuracy_score(real, results)
+
+    <span class="hljs-comment">#show additional info for each transaction row</span>
+    additional_info = [x.explanation <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> predictions]
+    <span class="hljs-keyword">return</span> {
+        <span class="hljs-string">'accuracy'</span>: accuracy,
+        <span class="hljs-string">'accuracy_function'</span>: <span class="hljs-string">'balanced_accuracy_score'</span>,
+        <span class="hljs-string">'backend'</span>: backend,
+        <span class="hljs-string">'additinal_indfo'</span>: additional_info
+    }
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    result = run()
+    print(result)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="mindsdb-accuracy"></a><a href="#mindsdb-accuracy" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mindsdb accuracy</h2>
+<table>
+<thead>
+<tr><th>Accuraccy</th><th>Backend</th><th>Last run</th><th>MindsDB Version</th><th>Latest Version</th></tr>
+</thead>
+<tbody>
+<tr><td>0.7659574468085106</td><td>Lightwood</td><td>17 April 2020</td><td><a href="https://pypi.org/project/MindsDB/1.16.1/"><img src="https://img.shields.io/badge/pypi--package-1.16.1-green" alt="MindsDB"></a></td><td><a href="https://pypi.org/project/MindsDB/"><img src="https://badge.fury.io/py/MindsDB.svg" alt="PyPi Version"></a></td></tr>
+</tbody>
+</table>
+<p><details>
+<summary>Click to expand MindsDB's explanation for test rows:
+</summary></p>
+<pre><code class="hljs css language-json">{
+    'accuracy': 0.7565675908943792,
+    'accuracy_function': 'balanced_accuracy_score',
+    'backend': 'lightwood',
+    'additinal_indfo': [{
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3025,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3336,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3105,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3157,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6721,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3646,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3357,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2942,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3217,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2945,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2956,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3541,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2821,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.329,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3478,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3205,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3313,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3597,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.343,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3496,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2993,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3446,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3505,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7211,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7188,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2391,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3451,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3329,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3107,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6946,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3254,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3235,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3358,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6406,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3169,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3076,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3416,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3082,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2682,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6873,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2981,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3016,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3388,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3385,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7224,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3471,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.2889,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7288,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3466,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3494,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2984,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3284,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6612,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3224,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3091,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3159,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3473,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3327,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2836,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2669,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6778,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3618,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3541,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3127,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3426,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3023,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3011,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7278,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3155,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3132,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3114,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3185,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3423,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2856,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2919,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6689,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3234,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3578,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.343,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3385,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3193,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7234,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3295,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3463,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3381,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.327,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2965,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6723,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6603,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3284,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3422,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3071,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.364,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3235,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2832,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.343,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3193,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3274,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.373,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3395,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3344,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2816,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3155,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2949,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3387,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3503,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3272,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3422,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3213,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3406,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3614,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6979,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3139,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6932,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3116,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2762,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2551,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3195,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7184,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3522,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6751,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3274,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3201,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3202,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3155,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3161,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3424,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3421,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.2793,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.321,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3211,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3335,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2488,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7266,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6565,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3408,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3232,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3304,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.289,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.2884,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3126,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6931,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3159,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3409,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3331,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3079,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3302,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.357,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3113,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.2918,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3358,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6882,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3195,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3306,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6915,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3152,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3302,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3089,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3479,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3192,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6978,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3405,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2876,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3474,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2984,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3497,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3237,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3258,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3292,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.2991,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2901,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2827,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3265,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3103,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2797,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3215,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3226,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3642,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6842,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7124,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3355,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3209,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3269,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3125,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7141,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3469,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.343,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6434,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3299,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.345,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3268,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3516,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6152,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3278,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6178,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3374,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2913,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3552,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3237,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2442,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3291,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2983,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6926,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7216,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3458,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.31,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3698,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2702,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.249,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3396,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3034,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3491,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3275,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.326,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6865,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3493,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.322,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3327,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2782,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3593,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3156,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3524,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3023,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.323,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3297,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3308,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3384,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7424,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7164,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3226,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3496,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6182,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2941,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3334,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3029,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.309,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7274,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3359,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3031,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3417,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3049,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7084,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3406,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.318,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3361,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3399,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3182,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2924,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2955,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3068,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3015,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3518,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3197,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3311,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.335,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2923,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3143,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7062,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3254,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.345,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3188,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3423,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.325,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.31,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3468,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7099,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2866,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3014,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3154,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3017,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2922,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.32,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.712,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3107,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3516,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3444,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3119,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3251,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6961,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6597,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3483,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3217,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2752,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3237,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.354,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3087,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3476,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3192,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3235,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3013,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3116,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.326,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3091,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.249,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3303,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3207,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6373,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2862,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3217,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3509,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3265,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2982,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3277,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3468,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3105,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2551,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3148,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7298,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3155,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3285,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3259,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3171,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3209,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3141,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3056,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3459,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7031,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3357,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3309,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6214,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3631,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3296,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3176,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2897,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3417,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2888,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3244,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3087,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.308,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3586,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.2836,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.2912,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3262,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3006,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2879,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3274,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2343,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6925,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.297,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3457,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.337,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2885,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3276,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3066,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3351,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7009,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3168,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3276,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6891,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.343,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2922,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3318,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2969,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6635,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3001,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7207,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.308,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3517,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3278,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2939,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3144,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6735,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7121,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7157,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3158,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3159,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.7129,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3037,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.2993,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3174,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.355,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3269,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.672,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3127,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2647,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3051,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3176,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3249,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3072,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.6732,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3282,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.358,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.7158,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3413,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2234,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3251,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3227,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3573,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3393,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.6907,
+            'explanation': {
+                'prediction_quality': 'confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2887,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3063,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3421,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3197,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3648,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3007,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2854,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.3213,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.2984,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.3286,
+            'explanation': {
+                'prediction_quality': 'not very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'not very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.9264,
+            'explanation': {
+                'prediction_quality': 'very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.9339,
+            'explanation': {
+                'prediction_quality': 'very confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.5589,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.5589,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.5589,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.5589,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.5589,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'Yes',
+            'confidence': 0.5589,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }, {
+        'Churn': {
+            'predicted_value': 'No',
+            'confidence': 0.5514,
+            'explanation': {
+                'prediction_quality': 'somewhat confident',
+                'important_missing_information': []
+            },
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        }
+    }]
+}
+</code></pre>
+<p></details></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/mindsdb/docs/booking-cancelation"><span class="arrow-prev">← </span><span>Hotel Booking Demand</span></a><a class="docs-next button" href="/mindsdb/docs/faq"><span>FAQ</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#processed-dataset">Processed Dataset</a></li><li><a href="#mindsdb-code-example">MindsDB Code example</a></li><li><a href="#mindsdb-accuracy">Mindsdb accuracy</a></li></ul></nav></div><footer class="nav-footer mindsdb-primary" id="footer"><section class="sitemap"><a href="/mindsdb/" class="nav-home"><img src="/mindsdb/img/logo_bear.png" alt="Mindsdb" width="66" class="mindsdb-secondary" height="58"/></a><div><h5>Docs</h5><a href="/mindsdb/docs/installing-mindsdb">Getting started</a></div><div><h5>Community</h5><a href="https://medium.com/mindsdb" target="_blank" rel="noreferrer noopener">Medium</a><a href="https://www.facebook.com/MindsDB/" target="_blank">Facebook</a><a href="https://twitter.com/mindsdb?lang=en" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.youtube.com/channel/UC5_wBOLCWath6q1iTgPPD5A" target="_blank">Youtube</a></div><div><h5>More</h5><a href="https://www.mindsdb.com/blog" target="_blank">Blog</a><a href="https://github.com/mindsdb/mindsdb" target="_blank">GitHub</a><a class="github-button" href="https://github.com/mindsdb/mindsdb" data-icon="octicon-star" data-count-href="/mindsdb/mindsdb/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 <a href="http://mindsdb.com/">Mindsdb</a></section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

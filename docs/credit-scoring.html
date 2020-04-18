@@ -1,0 +1,2455 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Credit Scoring · Mindsdb</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;| Industry       | Department | Role               |&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Credit Scoring · Mindsdb"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mindsdb.github.io/mindsdb/index.html"/><meta property="og:description" content="&lt;p&gt;| Industry       | Department | Role               |&lt;/p&gt;
+"/><meta property="og:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><link rel="shortcut icon" href="/mindsdb/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/mindsdb/css/main.css"/><script src="/mindsdb/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/mindsdb/"><img class="logo" src="/mindsdb/img/mindsdb_logo_white.png" alt="Mindsdb"/><h2 class="headerTitleWithLogo">Mindsdb</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/mindsdb/docs/installing-mindsdb" target="_self">Docs</a></li><li class=""><a href="https://github.com/mindsdb/mindsdb/releases" target="_self">Download</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Use Cases</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/installing-mindsdb">Installing MindsDB</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/google-colab">Google Colab</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/jupyter-notebook">Running on Jupyter Notebook</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Tutorials</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/basic-mindsdb">Learning from Examples</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/advanced-mindsdb">Examples of Advanced Usecases</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Configuration</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/predictor-interface">Predictor interface</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/config">Configuration Settings</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Features</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/column-metrics">Column metrics</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/data-sources">Data sources</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Comparisons</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/comparison-mindsdb">Comparison with other Libraries</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/accuracy-comparison">Comparing Mindsdb accuracy</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Integrations</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/aws-sageMaker">Amazon SageMaker</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Bring your own container</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/mindsdb-container">MindsDB container</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/use-mindsdb-in-sage">Train and host MindsDB models</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/use-sage-sdk">Train and host MindsDB Models using SageMaker SDK</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/call-sage-endpoint">Call SageMaker Endpoint</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Use Cases</h3><ul class=""><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Retail &amp; Online</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/customer-lifetime">Customer Lifetime Value Optimization</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/fraud-detection">Fraud Detection</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Financial Services</h4><ul><li class="navListItem navListItemActive"><a class="navItem" href="/mindsdb/docs/credit-scoring">Credit Scoring</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Health Care</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/patient-health">Patient Hearth Health</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/medical-diagnosis">Medical Diagnosis</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Travel</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/booking-cancelation">Hotel Booking Demand</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Telecommunications</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/churn-reduction">Customer Churn Reduction</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Contributing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/faq">FAQ</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/inside-mindsdb">Inside MindsdDB</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Credit Scoring</h1></header><article><div><span><table>
+<thead>
+<tr><th>Industry</th><th>Department</th><th>Role</th></tr>
+</thead>
+<tbody>
+<tr><td>Financial Services</td><td>Finance</td><td>Business executive</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="processed-dataset"></a><a href="#processed-dataset" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Processed Dataset</h2>
+<h6><a class="anchor" aria-hidden="true" id="data-https-imgshieldsio-badge-get-data-defaultofcreditcard-green-https-githubcom-mindsdb-mindsdb-examples-tree-master-benchmarks-german-credit-data-processed-data"></a><a href="#data-https-imgshieldsio-badge-get-data-defaultofcreditcard-green-https-githubcom-mindsdb-mindsdb-examples-tree-master-benchmarks-german-credit-data-processed-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/mindsdb/mindsdb-examples/tree/master/benchmarks/german_credit_data/processed_data"><img src="https://img.shields.io/badge/GET--DATA-DefaultofCreditCard-green" alt="Data"></a></h6>
+<p>The German Credit dataset is a publically available from the <a href="https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29">UCI Machine Learning Repository</a>. The dataset contains data on 20 variables and the classification whether an applicant is considered a Good or a Bad credit risks.</p>
+<p><details>
+<summary>Click to expand Features Informations:</summary></p>
+<ul>
+<li><p>Attribute 1: (qualitative)</p>
+<ul>
+<li>Status of existing checking account</li>
+<li>A11 : ... &lt; 0 DM</li>
+<li>A12 : 0 &lt;= ... &lt; 200 DM</li>
+<li>A13 : ... &gt;= 200 DM / salary assignments for at least 1 year</li>
+<li>A14 : no checking account</li>
+</ul></li>
+<li><p>Attribute 2: (numerical)</p>
+<ul>
+<li>Duration in month</li>
+</ul></li>
+<li><p>Attribute 3: (qualitative)</p>
+<ul>
+<li>Credit history</li>
+<li>A30 : no credits taken/ all credits paid back duly</li>
+<li>A31 : all credits at this bank paid back duly</li>
+<li>A32 : existing credits paid back duly till now</li>
+<li>A33 : delay in paying off in the past</li>
+<li>A34 : critical account/ other credits existing (not at this bank)</li>
+</ul></li>
+<li><p>Attribute 4: (qualitative)</p>
+<ul>
+<li>Purpose</li>
+<li>A40 : car (new)</li>
+<li>A41 : car (used)</li>
+<li>A42 : furniture/equipment</li>
+<li>A43 : radio/television</li>
+<li>A44 : domestic appliances</li>
+<li>A45 : repairs</li>
+<li>A46 : education</li>
+<li>A47 : (vacation - does not exist?)</li>
+<li>A48 : retraining</li>
+<li>A49 : business</li>
+<li>A410 : others</li>
+</ul></li>
+<li><p>Attribute 5: (numerical)</p>
+<ul>
+<li>Credit amount</li>
+</ul></li>
+<li><p>Attibute 6: (qualitative)</p>
+<ul>
+<li>Savings account/bonds</li>
+<li>A61 : ... &lt; 100 DM</li>
+<li>A62 : 100 &lt;= ... &lt; 500 DM</li>
+<li>A63 : 500 &lt;= ... &lt; 1000 DM</li>
+<li>A64 : .. &gt;= 1000 DM</li>
+<li>A65 : unknown/ no savings account</li>
+</ul></li>
+<li><p>Attribute 7: (qualitative)</p>
+<ul>
+<li>Present employment since</li>
+<li>A71 : unemployed</li>
+<li>A72 : ... &lt; 1 year</li>
+<li>A73 : 1 &lt;= ... &lt; 4 years</li>
+<li>A74 : 4 &lt;= ... &lt; 7 years</li>
+<li>A75 : .. &gt;= 7 years</li>
+</ul></li>
+<li><p>Attribute 8: (numerical)</p>
+<ul>
+<li>Installment rate in percentage of disposable income</li>
+</ul></li>
+<li><p>Attribute 9: (qualitative)</p>
+<ul>
+<li>Personal status and sex</li>
+<li>A91 : male : divorced/separated</li>
+<li>A92 : female : divorced/separated/married</li>
+<li>A93 : male : single</li>
+<li>A94 : male : married/widowed</li>
+<li>A95 : female : single</li>
+</ul></li>
+<li><p>Attribute 10: (qualitative)</p>
+<ul>
+<li>Other debtors / guarantors</li>
+<li>A101 : none</li>
+<li>A102 : co-applicant</li>
+<li>A103 : guarantor</li>
+</ul></li>
+<li><p>Attribute 11: (numerical)</p>
+<ul>
+<li>Present residence since</li>
+</ul></li>
+<li><p>Attribute 12: (qualitative)</p>
+<ul>
+<li>Property</li>
+<li>A121 : real estate</li>
+<li>A122 : if not A121 : building society savings agreement/ life insurance</li>
+<li>A123 : if not A121/A122 : car or other, not in attribute 6</li>
+<li>A124 : unknown / no property</li>
+</ul></li>
+<li><p>Attribute 13: (numerical)</p>
+<ul>
+<li>Age in years</li>
+</ul></li>
+<li><p>Attribute 14: (qualitative)</p>
+<ul>
+<li>Other installment plans</li>
+<li>A141 : bank</li>
+<li>A142 : stores</li>
+<li>A143 : none</li>
+</ul></li>
+<li><p>Attribute 15: (qualitative)</p>
+<ul>
+<li>Housing</li>
+<li>A151 : rent</li>
+<li>A152 : own</li>
+<li>A153 : for free</li>
+</ul></li>
+<li><p>Attribute 16: (numerical)</p>
+<ul>
+<li>Number of existing credits at this bank</li>
+</ul></li>
+<li><p>Attribute 17: (qualitative)</p>
+<ul>
+<li>Job</li>
+<li>A171 : unemployed/ unskilled - non-resident</li>
+<li>A172 : unskilled - resident</li>
+<li>A173 : skilled employee / official</li>
+<li>A174 : management/ self-employed/</li>
+<li>highly qualified employee/ officer</li>
+</ul></li>
+<li><p>Attribute 18: (numerical)</p>
+<ul>
+<li>Number of people being liable to provide maintenance for</li>
+</ul></li>
+<li><p>Attribute 19: (qualitative)</p>
+<ul>
+<li>Telephone</li>
+<li>A191 : none</li>
+<li>A192 : yes, registered under the customers name</li>
+</ul></li>
+<li><p>Attribute 20: (qualitative)</p>
+<ul>
+<li>foreign worker</li>
+<li>A201 : yes</li>
+<li>A202 : no</li>
+</ul></li>
+</ul>
+<p></details></p>
+<h2><a class="anchor" aria-hidden="true" id="mindsdb-code-example"></a><a href="#mindsdb-code-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MindsDB Code example</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> mindsdb <span class="hljs-keyword">import</span> Predictor
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+<span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> balanced_accuracy_score, confusion_matrix
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">(sample=False)</span>:</span>
+    backend = <span class="hljs-string">'lightwood'</span>
+
+    mdb = Predictor(name=<span class="hljs-string">'german_data'</span>)
+
+    mdb.learn(to_predict=<span class="hljs-string">'class'</span>,from_data=<span class="hljs-string">'processed_data/train.csv'</span>,backend=backend)
+
+    predictions = mdb.predict(when_data=<span class="hljs-string">'processed_data/test.csv'</span>, use_gpu=<span class="hljs-literal">True</span>)
+
+    predicted_class = [x[<span class="hljs-string">'class'</span>] <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> predictions]
+    real_class = list(pd.read_csv(<span class="hljs-string">'processed_data/test.csv'</span>)[<span class="hljs-string">'class'</span>])
+
+    accuracy = balanced_accuracy_score(real_class, predicted_class)
+    print(<span class="hljs-string">f'Balacned accuracy score of <span class="hljs-subst">{accuracy}</span>'</span>)
+
+    cm = confusion_matrix(real_class, predicted_class)
+
+    print(cm)
+    <span class="hljs-keyword">return</span> {
+        <span class="hljs-string">'accuracy'</span>: accuracy
+        ,<span class="hljs-string">'accuracy_function'</span>: <span class="hljs-string">'balanced_accuracy_score'</span>
+        ,<span class="hljs-string">'backend'</span>: backend
+    }
+
+
+<span class="hljs-comment"># Run as main</span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    print(run())
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="mindsdb-accuracy"></a><a href="#mindsdb-accuracy" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mindsdb accuracy</h2>
+<table>
+<thead>
+<tr><th>Accuraccy</th><th>Backend</th><th>Last run</th><th>MindsDB Version</th><th>Latest Version</th></tr>
+</thead>
+<tbody>
+<tr><td>0.64880952380</td><td>Lightwood</td><td>15 April 2020</td><td><a href="https://pypi.org/project/MindsDB/1.16.0/"><img src="https://img.shields.io/badge/pypi--package-1.16.0-green" alt="MindsDB"></a></td><td><a href="https://pypi.org/project/MindsDB/"><img src="https://badge.fury.io/py/MindsDB.svg" alt="PyPi Version"></a></td></tr>
+</tbody>
+</table>
+<p><details>
+<summary>Click to expand MindsDB's explanation for each row:</summary></p>
+<pre><code class="hljs css language-json">[{
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9046,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9033,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8825,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7153,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8968,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.6981,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.9125,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8293,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8666,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8953,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.9105,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.9063,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6584,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8987,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.6782,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9038,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9046,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9034,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9043,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8439,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.7535,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9043,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8877,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.5874,
+        'explanation': {
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'somewhat confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.9197,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8154,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8149,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9019,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8936,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.7371,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.5657,
+        'explanation': {
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'somewhat confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9042,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.9194,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8974,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8684,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.809,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8493,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9029,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9036,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6824,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.904,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6617,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.7116,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.589,
+        'explanation': {
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'somewhat confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9019,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8118,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8558,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.863,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.904,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8859,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7422,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8905,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8716,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8945,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.6931,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.5787,
+        'explanation': {
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'somewhat confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8968,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.611,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.73,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8305,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9002,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8612,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8669,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9009,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7793,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8351,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9002,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6136,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7026,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.57,
+        'explanation': {
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'somewhat confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8644,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8982,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.87,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.7768,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8755,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9034,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8423,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9003,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.7692,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7746,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8908,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8656,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.867,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9047,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.9134,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8519,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6124,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8978,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9046,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9047,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9008,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.9184,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8938,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8987,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9042,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6036,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.902,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7563,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8869,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8899,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8661,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8358,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8754,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9024,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8181,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9043,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8435,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9044,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8909,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9023,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.787,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9026,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8428,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8338,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9021,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8932,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9003,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9036,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.7584,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9041,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9044,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9013,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.9147,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9028,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.6759,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8972,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.717,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8758,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8846,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7568,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.6393,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8951,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9046,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8863,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.5935,
+        'explanation': {
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'somewhat confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8989,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.71,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.898,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8921,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8474,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8308,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6156,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8964,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.758,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8949,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8849,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9047,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.805,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8874,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9045,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.887,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8964,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8514,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9047,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9042,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.6647,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.881,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8984,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9033,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.909,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8051,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.8966,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9044,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9048,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8763,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8893,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9029,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.74,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6203,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7943,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9047,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9042,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9018,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.7216,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8743,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8879,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9004,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8964,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8901,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8802,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8076,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.904,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9021,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.6502,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8552,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9047,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.902,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9009,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8361,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8634,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9036,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9046,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.7336,
+        'explanation': {
+            'prediction_quality': 'confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'bad',
+        'confidence': 0.5688,
+        'explanation': {
+            'prediction_quality': 'somewhat confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'somewhat confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9045,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9035,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9042,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.8864,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9044,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}, {
+    'class': {
+        'predicted_value': 'good',
+        'confidence': 0.9047,
+        'explanation': {
+            'prediction_quality': 'very confident',
+            'important_missing_information': []
+        },
+        'prediction_quality': 'very confident',
+        'important_missing_information': []
+    }
+}]
+</code></pre>
+<p></details></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/mindsdb/docs/fraud-detection"><span class="arrow-prev">← </span><span>Fraud Detection</span></a><a class="docs-next button" href="/mindsdb/docs/patient-health"><span>Patient Hearth Health</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#processed-dataset">Processed Dataset</a></li><li><a href="#mindsdb-code-example">MindsDB Code example</a></li><li><a href="#mindsdb-accuracy">Mindsdb accuracy</a></li></ul></nav></div><footer class="nav-footer mindsdb-primary" id="footer"><section class="sitemap"><a href="/mindsdb/" class="nav-home"><img src="/mindsdb/img/logo_bear.png" alt="Mindsdb" width="66" class="mindsdb-secondary" height="58"/></a><div><h5>Docs</h5><a href="/mindsdb/docs/installing-mindsdb">Getting started</a></div><div><h5>Community</h5><a href="https://medium.com/mindsdb" target="_blank" rel="noreferrer noopener">Medium</a><a href="https://www.facebook.com/MindsDB/" target="_blank">Facebook</a><a href="https://twitter.com/mindsdb?lang=en" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.youtube.com/channel/UC5_wBOLCWath6q1iTgPPD5A" target="_blank">Youtube</a></div><div><h5>More</h5><a href="https://www.mindsdb.com/blog" target="_blank">Blog</a><a href="https://github.com/mindsdb/mindsdb" target="_blank">GitHub</a><a class="github-button" href="https://github.com/mindsdb/mindsdb" data-icon="octicon-star" data-count-href="/mindsdb/mindsdb/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 <a href="http://mindsdb.com/">Mindsdb</a></section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Examples of Advanced Usecases · Mindsdb</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;multiple-column-predictions&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#multiple-column-predictions&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Multiple column predictions&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Examples of Advanced Usecases · Mindsdb"/><meta property="og:type" content="website"/><meta property="og:url" content="https://mindsdb.github.io/mindsdb/index.html"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;multiple-column-predictions&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#multiple-column-predictions&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Multiple column predictions&lt;/h2&gt;
+"/><meta property="og:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://mindsdb.github.io/mindsdb/img/docusaurus.png"/><link rel="shortcut icon" href="/mindsdb/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/mindsdb/css/main.css"/><script src="/mindsdb/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/mindsdb/"><img class="logo" src="/mindsdb/img/mindsdb_logo_white.png" alt="Mindsdb"/><h2 class="headerTitleWithLogo">Mindsdb</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/mindsdb/docs/installing-mindsdb" target="_self">Docs</a></li><li class=""><a href="https://github.com/mindsdb/mindsdb/releases" target="_self">Download</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Tutorials</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/installing-mindsdb">Installing MindsDB</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/google-colab">Google Colab</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/jupyter-notebook">Running on Jupyter Notebook</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Tutorials</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/basic-mindsdb">Learning from Examples</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/mindsdb/docs/advanced-mindsdb">Examples of Advanced Usecases</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Configuration</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/predictor-interface">Predictor interface</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/config">Configuration Settings</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Features</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/column-metrics">Column metrics</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/data-sources">Data sources</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Comparisons</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/comparison-mindsdb">Comparison with other Libraries</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/accuracy-comparison">Comparing Mindsdb accuracy</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Integrations</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/aws-sageMaker">Amazon SageMaker</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Bring your own container</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/mindsdb-container">MindsDB container</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/use-mindsdb-in-sage">Train and host MindsDB models</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/use-sage-sdk">Train and host MindsDB Models using SageMaker SDK</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/call-sage-endpoint">Call SageMaker Endpoint</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Use Cases</h3><ul class=""><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Retail &amp; Online</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/customer-lifetime">Customer Lifetime Value Optimization</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/fraud-detection">Fraud Detection</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Financial Services</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/credit-scoring">Credit Scoring</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Health Care</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/patient-health">Patient Hearth Health</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/medical-diagnosis">Medical Diagnosis</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Travel</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/booking-cancelation">Hotel Booking Demand</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Telecommunications</h4><ul><li class="navListItem"><a class="navItem" href="/mindsdb/docs/churn-reduction">Customer Churn Reduction</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Contributing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mindsdb/docs/faq">FAQ</a></li><li class="navListItem"><a class="navItem" href="/mindsdb/docs/inside-mindsdb">Inside MindsdDB</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Examples of Advanced Usecases</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="multiple-column-predictions"></a><a href="#multiple-column-predictions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multiple column predictions</h2>
+<h3><a class="anchor" aria-hidden="true" id="what-is-a-multiple-column-prediction"></a><a href="#what-is-a-multiple-column-prediction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is a multiple column prediction ?</h3>
+<p>In some cases, you might want to predict more than one column of your data.</p>
+<p>In order for mindsdb to predict multiple columns, you simply need to change the <code>to_predict</code> argument from a string (denoting the name of the column) to an array containing the names of the columns you want to predict.</p>
+<p>In the following example, we've altered the real estate model to predict the <code>location</code> and <code>neighborhood</code> both, instead of the <code>rental_price</code>.</p>
+<h3><a class="anchor" aria-hidden="true" id="code-example"></a><a href="#code-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Code example</h3>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">import</span> mindsdb
+
+mdb = mindsdb.Predictor(name=<span class="hljs-string">'multilabel_real_estate_model'</span>)
+mdb.learn(
+    from_data=<span class="hljs-string">"https://s3.eu-west-2.amazonaws.com/mindsdb-example-data/home_rentals.csv"</span>,
+    to_predict=[<span class="hljs-string">'location'</span>,<span class="hljs-string">'neighborhood'</span>] <span class="hljs-comment"># Array with the names of the columns we want to predict</span>
+)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="multimedia-inputs-images-audio-and-video"></a><a href="#multimedia-inputs-images-audio-and-video" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multimedia inputs (images, audio and video)</h2>
+<p>Currently, we only support images as inputs into models. We are working on support audio, you can check <a href="https://github.com/mindsdb/mindsdb/issues/124">this issue</a> to track the progress. Video input support is not yet planned.</p>
+<p>For any sort of media files, simply provide the full path to the file in the column. For example:</p>
+<pre><code class="hljs css language-python">[
+  {<span class="hljs-string">'img'</span>:<span class="hljs-string">'/mnt/data/img_1.jpg'</span>
+    <span class="hljs-string">'is_bicycle'</span>: <span class="hljs-literal">True</span>}
+  ,{<span class="hljs-string">'img'</span>:<span class="hljs-string">'/mnt/data/img_2.jpg'</span>
+    <span class="hljs-string">'is_bicycle'</span>: <span class="hljs-literal">True</span>}
+  ,{<span class="hljs-string">'img'</span>:<span class="hljs-string">'/mnt/data/img_3.jpg'</span>
+    <span class="hljs-string">'is_bicycle'</span>: <span class="hljs-literal">False</span>}
+]
+</code></pre>
+<p>Please provide the full path to a file on your local machine, not a url or the binary data from an image loaded up in a dataframe.</p>
+<p>Currently, the timeline on supporting multimedia output is still undecided, if you need that feature or want to implement, feel free to contact us. That being said, image outputs might actually work, we just haven't tested anything yet.</p>
+<h2><a class="anchor" aria-hidden="true" id="timeseries-predictions"></a><a href="#timeseries-predictions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Timeseries predictions</h2>
+<h3><a class="anchor" aria-hidden="true" id="what-is-a-timeseries"></a><a href="#what-is-a-timeseries" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is a timeseries ?</h3>
+<p>A timeseries is a document where rows are related to each other in a sequential way, such that the prediction of the value in the present row should take into account a number of previous rows.</p>
+<p>To build a timeseries model you need to call <code>learn</code> with timeseries specific arguments:</p>
+<h3><a class="anchor" aria-hidden="true" id="mandatory-arguments"></a><a href="#mandatory-arguments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mandatory arguments</h3>
+<ul>
+<li>order_by  -- The column on which to order the rows being feed into the model (e.g. a timestamp)</li>
+<li>window_size -- The number of rows to &quot;look back&quot; into when making a prediction, after the rows are ordered by the order_by column and split into groups. This is an alias for <code>window_size_samples</code>, they are interchangeable. You can use <code>window_size_seconds</code> instead if you want to use a number of seconds passing on the order by column, rather than a fixed number (please note, this approach assumes the order by column is or can be converted internally into a unix timestamp)</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="optional-arguments"></a><a href="#optional-arguments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optional arguments</h3>
+<ul>
+<li>group_by -- The column based on which to group multiple unrelated entities present in your timeseries data. If your data is coming from multiple sources, this argument can be a differentiator between those sources (e.g a uuid for the source).</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="code-example-1"></a><a href="#code-example-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Code example</h3>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">import</span> mindsdb
+
+mdb = mindsdb.Predictor(name=<span class="hljs-string">'assembly_machines_model'</span>)
+mdb.learn(
+    from_data=<span class="hljs-string">'assembly_machines_historical_data.tsv'</span>,
+    to_predict=<span class="hljs-string">'chance_of_failure'</span>
+    <span class="hljs-comment"># timeseries specific args</span>
+    ,order_by=<span class="hljs-string">'timestamp'</span> <span class="hljs-comment"># The time of this reading</span>
+    ,window_size_seconds= <span class="hljs-number">12000</span> <span class="hljs-comment"># Use the last 1200 seconds of data to train for the prediction of a row, If you want a fixed nr of rows, use window_size_samples instead</span>
+    ,group_by = <span class="hljs-string">'machine_id'</span> <span class="hljs-comment"># Train the model as a timeseries for each individual machine</span>
+)
+
+results = mdb.predict(when_data=<span class="hljs-string">'assembly_machines_data.tsv'</span>)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="other-approaches-to-timeseries-data"></a><a href="#other-approaches-to-timeseries-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Other approaches to timeseries data</h3>
+<p>Another way of approaching a timeseries prediction, if you don't want to use mindsdb's interface, is to simply include array's for the non-group-by values in your rows.</p>
+<p>For example, to train, you could use the following csv:</p>
+<pre><code class="hljs css language-python">X vlas,previous Y vlas, Y now
+[<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span>],[<span class="hljs-number">1</span> <span class="hljs-number">4</span> <span class="hljs-number">9</span>],<span class="hljs-number">16</span>
+[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>],[<span class="hljs-number">4</span>,<span class="hljs-number">9</span>,<span class="hljs-number">16</span>],<span class="hljs-number">25</span>
+[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>],[<span class="hljs-number">9</span>,<span class="hljs-number">16</span>,<span class="hljs-number">25</span>],<span class="hljs-number">36</span>
+</code></pre>
+<p>And your model would be fit to predict the <code>Y now</code> column for this csv:</p>
+<pre><code class="hljs css language-python">X vlas,previous Y vlas
+[<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>,<span class="hljs-number">10</span>][<span class="hljs-number">49</span>,<span class="hljs-number">64</span>,<span class="hljs-number">81</span>]
+[<span class="hljs-number">33</span>,<span class="hljs-number">34</span>,<span class="hljs-number">35</span>,<span class="hljs-number">36</span>][<span class="hljs-number">1089</span>,<span class="hljs-number">1156</span>,<span class="hljs-number">1225</span>]
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="unbalanced-dataset"></a><a href="#unbalanced-dataset" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unbalanced dataset</h2>
+<p>Given a dataset that is &quot;imbalanced&quot;, the model being trained might not give the results you expect. For example, let's say you have the following dataset:</p>
+<pre><code class="hljs css language-python">data.csv
+x,  is_power_of_9
+<span class="hljs-number">1</span>,  <span class="hljs-literal">False</span>
+<span class="hljs-number">2</span>,  <span class="hljs-literal">False</span>
+<span class="hljs-number">3</span>,  <span class="hljs-literal">False</span>
+<span class="hljs-number">4</span>,  <span class="hljs-literal">False</span>
+<span class="hljs-number">5</span>,  <span class="hljs-literal">False</span>
+<span class="hljs-number">6</span>,  <span class="hljs-literal">False</span>
+<span class="hljs-number">7</span>,  <span class="hljs-literal">False</span>
+<span class="hljs-number">8</span>,  <span class="hljs-literal">False</span>
+<span class="hljs-number">9</span>,  <span class="hljs-literal">True</span>
+<span class="hljs-number">10</span>, <span class="hljs-literal">False</span>
+<span class="hljs-number">11</span>, <span class="hljs-literal">False</span>
+.
+.
+.
+<span class="hljs-number">81</span>, <span class="hljs-literal">True</span>
+<span class="hljs-number">82</span>, <span class="hljs-literal">False</span>
+<span class="hljs-number">83</span>, <span class="hljs-literal">False</span>
+<span class="hljs-number">84</span>, <span class="hljs-literal">False</span>
+.
+.
+.
+<span class="hljs-number">100</span>, <span class="hljs-literal">False</span>
+</code></pre>
+<p>On which we want to predicted the aptly-named column <code>is_power_of_9</code>.</p>
+<p>We have 2 occurrences of the output <code>True</code> and 98 occurrences of the <code>False</code> output. So a model could always predict <code>False</code> and it would have an accuracy of 98%, which is pretty decent, so unless there's a way for the model to learn those 2 instance of <code>True</code> without losing on accuracy, it might just decided <code>98%</code> is the best possible model.</p>
+<p>However, let's say we really care about those <code>True</code> predictions being correct, or at least we want the model to consider them equally important, in that case we would call the <code>learn</code> function using the <code>equal_accuracy_for_all_output_categories</code> argument set to true.</p>
+<p>This essentially means that a model with 50% accuracy, with 2 correct predictions for <code>True</code> (100%) and 48 for <code>False</code> (49%) is considered better than a model with 98% accuracy that only predictions <code>False</code> when mindsdb trains the model.</p>
+<p>We could call this as: <code>predictior.learn(from_data='data.csv', equal_accuracy_for_all_output_categories=True)</code></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/mindsdb/docs/basic-mindsdb"><span class="arrow-prev">← </span><span>Learning from Examples</span></a><a class="docs-next button" href="/mindsdb/docs/predictor-interface"><span>Predictor interface</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#multiple-column-predictions">Multiple column predictions</a><ul class="toc-headings"><li><a href="#what-is-a-multiple-column-prediction">What is a multiple column prediction ?</a></li><li><a href="#code-example">Code example</a></li></ul></li><li><a href="#multimedia-inputs-images-audio-and-video">Multimedia inputs (images, audio and video)</a></li><li><a href="#timeseries-predictions">Timeseries predictions</a><ul class="toc-headings"><li><a href="#what-is-a-timeseries">What is a timeseries ?</a></li><li><a href="#mandatory-arguments">Mandatory arguments</a></li><li><a href="#optional-arguments">Optional arguments</a></li><li><a href="#code-example-1">Code example</a></li><li><a href="#other-approaches-to-timeseries-data">Other approaches to timeseries data</a></li></ul></li><li><a href="#unbalanced-dataset">Unbalanced dataset</a></li></ul></nav></div><footer class="nav-footer mindsdb-primary" id="footer"><section class="sitemap"><a href="/mindsdb/" class="nav-home"><img src="/mindsdb/img/logo_bear.png" alt="Mindsdb" width="66" class="mindsdb-secondary" height="58"/></a><div><h5>Docs</h5><a href="/mindsdb/docs/installing-mindsdb">Getting started</a></div><div><h5>Community</h5><a href="https://medium.com/mindsdb" target="_blank" rel="noreferrer noopener">Medium</a><a href="https://www.facebook.com/MindsDB/" target="_blank">Facebook</a><a href="https://twitter.com/mindsdb?lang=en" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.youtube.com/channel/UC5_wBOLCWath6q1iTgPPD5A" target="_blank">Youtube</a></div><div><h5>More</h5><a href="https://www.mindsdb.com/blog" target="_blank">Blog</a><a href="https://github.com/mindsdb/mindsdb" target="_blank">GitHub</a><a class="github-button" href="https://github.com/mindsdb/mindsdb" data-icon="octicon-star" data-count-href="/mindsdb/mindsdb/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 <a href="http://mindsdb.com/">Mindsdb</a></section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
